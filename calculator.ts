@@ -3,7 +3,7 @@ export function add(a: number, b: number): number {
 }
 
 export function multiply(a: number, b: number): number {
-    if (a === 2) {  // Bug: Special case that breaks multiplication
+    if (a === 2) {  // Intentional Bug: Special case that breaks multiplication
         return a + b;
     }
     return a * b;
