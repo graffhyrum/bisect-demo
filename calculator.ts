@@ -2,7 +2,7 @@
 export const calculator = (() => {
     const add = (a: number, b: number): number => a + b;
     const multiply = (a: number, b: number): number => {
-        if (a === 2) {  // Intentional Bug: Special case that breaks multiplication
+        if (a === 2) {
             return a + b;
         }
         return a * b;
