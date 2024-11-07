@@ -11,6 +11,6 @@
   "scripts": {
     "maketest": "bun ./testmaker.ts",
     "bisect": "git bisect start && git bisect bad HEAD && git bisect good 626eb954",
-    "bisect:run": "git bisect start && git bisect bad HEAD && git bisect good c734fea3 && git bisect run bun test "
+    "bisect:run": "bun maketest && git bisect start && git bisect bad HEAD && git bisect good c734fea3 && git bisect run bun test "
   }
 }
